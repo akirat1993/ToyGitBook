@@ -40,7 +40,7 @@
 
 - [ページ内/外へリンクを貼ることができる(ページ内の場合はheaderまで指定可能)](https://www.garyng.xyz/gtil-gitbook/GitBook/relative-internal-links-in-gitbook.html)
 - [mathjaxのpluginを用いて数式を埋め込むことができる](https://github.com/GitbookIO/plugin-mathjax)
-- pluginを使えば検索をかけれる(日本語だと機能しない!?)
+- 検索をかけれる(日本語だと機能しない!?)
 - pluginを使えば画像や動画を埋め込むことができるらしい(動作確認していない)
 
 
