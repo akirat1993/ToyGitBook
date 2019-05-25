@@ -10,7 +10,7 @@
 
   * `[Link Text](/path/to/file.md#<header>)`
 
-    (例)[自分が作成した違うページに飛ぶ](sample2.md#コードブロック)
+    (例)[自分が作成した違うページに飛ぶ](toygitbook.md#使用可能な主な機能)
 
 * ページ外リンク(external link)
 

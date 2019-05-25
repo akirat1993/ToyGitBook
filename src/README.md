@@ -2,27 +2,49 @@
 
 # 公開用の簡易的なGitBookを作成する
 
-## 方針
+## 概要
 
-下記のディレクトリ構造のように,公開したいマークダウン形式ファイルを`src/`以下に配置し,それを基にホームページ`html`ファイル`docs/`を作成して`gitbook`で公開する
+公開したいマークダウン形式のファイル群を`src/`以下に配置し,`GitBook`でホームページ(`.html`)を`docs/`以下に作成して`GitHub`で公開する.
 
-```
-ToyGitBook/
-	src/ #ホームページ(.html)を作るための元ファイルの配置場所
-  	SUMMARY.md
-  	README.md
-  	md/ 
-  		sample1.md
-  		sample2.md
-  	node_modules/ #gitbook installコマンドで作成されるディレクトリ
-  docs/ #gitbookによって作成したhtmlがあるディレクトリ
-```
+
+
+ここではこのサイトを作る具体的な手順を説明する.
+
+[GitBookを用いた共有サイト作成の概要と注意点はココをクリック](./md/toygitbook.md)
 
 
 
 ## 作成詳細
 
-1. 目次を`SUMMARY.md`で作成する.
+1. [Node.jsをインストール](https://qiita.com/kyosuke5_20/items/c5f68fc9d89b84c0df09)
+
+   Gitbookを使うのに必要なNode.jsをインストールします.手順は上記サイトを参考にしてください
+
+2. [GitBookでホームページ(HTML)を作成するサンプル](https://tatsuyashi.hatenablog.com/entry/2018/08/01/023325)
+   (必要ないかも) 上記を参考にしてこのサイトより簡単なページを自分で作成してみて下さい
+
+3. このサイトを作成するための元ファイルを始めから書くのは面倒なので,以下のコマンドで持ってくる(25MB)
+   `$git clone https://github.com/akirat1993/ToyGitBook.git`
+
+   ディレクトリ構造は以下になっているはず
+
+   ```
+   ToyGitBook/
+   	src/
+   		README.md
+   		SUMMARY.md
+   		book.json
+   		md/
+   			sample1.md
+   			sample2.md
+   	docs/
+   ```
+
+4. Gitの管理下から外す+作成済みのホームページ(`docs/`以下)を削除する
+
+   
+
+5. 目次を`SUMMARY.md`で作成する.
    このサイトを作成場合は`SUMMARY.md`は以下のようになる.
 
    ```markdown
@@ -38,7 +60,7 @@ ToyGitBook/
 
    ※`* [ホームページ上での表示](ファイルパス)`という風に階層的に記述
 
-2. 必要なパッケージを`book.json`に記載
+6. 必要なパッケージを`book.json`に記載
 
    ```json
    {
@@ -53,7 +75,7 @@ ToyGitBook/
    }
    ```
 
-3. パッケージをインストール
+7. パッケージをインストール
 
    1. `book.json`があるディレクトリに移動
 
@@ -65,7 +87,7 @@ ToyGitBook/
 
       →同じディレクトリ内にパッケージを含んでいる`node_modules`が作成される
 
-4. ローカルにホームページ(`.html`ファイル)を作成+確認
+8. ローカルにホームページ(`.html`ファイル)を作成+確認
 
    1. `$cd ToyGitBook`
 
@@ -81,7 +103,7 @@ ToyGitBook/
 
       →終了する場合はControl+Cなどで中断すれば良い.終了ごとに`docs`というディレクトリが作成されていることを確認
 
-5. *GitHub*で共有
+9. *GitHub*で共有
 
    1. *GitHub*で新規でpublicリポジトリを作成し`ToyGitBook`をその管理下におく.
    2. `Setting>GitHub Pages>Source`のところをNoneからmaster branch/docs folderに設定
