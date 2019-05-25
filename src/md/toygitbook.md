@@ -39,8 +39,8 @@
 ## 使用可能な主な機能
 
 - [ページ内/外へリンクを貼ることができる(ページ内の場合はheaderまで指定可能)](https://www.garyng.xyz/gtil-gitbook/GitBook/relative-internal-links-in-gitbook.html)
-- [mathjaxのpluginを用いて数式を埋め込むことができる](https://github.com/GitbookIO/plugin-mathjax)
-- 検索をかけれる(日本語だと機能しない!?)
+- mathjax-commonhtmlのpluginを用いて数式を埋め込むことができる
+- 検索をかけれる
 - pluginを使えば画像や動画を埋め込むことができるらしい(動作確認していない)
 
 
