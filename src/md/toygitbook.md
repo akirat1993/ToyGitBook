@@ -41,7 +41,7 @@
 - [ページ内/外へリンクを貼ることができる(ページ内の場合はheaderまで指定可能)](https://www.garyng.xyz/gtil-gitbook/GitBook/relative-internal-links-in-gitbook.html)
 - mathjax-commonhtmlのpluginを用いて数式を埋め込むことができる
 - 検索をかけれる
-- pluginを使えば画像や動画を埋め込むことができるらしい(動作確認していない)
+- 画像を埋め込むことができる(動画については動作未確認)
 
 
 
