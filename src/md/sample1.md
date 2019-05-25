@@ -14,7 +14,7 @@
 
 * ページ外リンク(external link)
 
-  * [Link Text](URL)
+  * `[Link Text](URL)`
 
     (例)[Google](https://www.google.com/)
 
